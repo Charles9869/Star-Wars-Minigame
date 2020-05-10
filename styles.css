@@ -1,0 +1,33 @@
+#app {
+  position: relative;
+}
+
+#menu {
+  position: relative;
+  z-index: 9999;
+  left: 125;
+  top: -200;
+  width: 200px;
+}
+
+#menu > button.btn {
+  text-align: center;
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border: 2px solid #e4ca29;
+  background-color: #000000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#logo {
+  position: relative;
+  bottom: 450px;
+  left: 150;
+  width: 150px;
+}
+
+#logo > img {
+  width: 100%;
+}
