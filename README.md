@@ -11,7 +11,7 @@ Simple Star wars game in Javascript, HTML and CSS. The goal of the game is to sh
 ## RUN LOCALLY
 
 ```
-git clone https://github.com/Charles9869/Star-Wars-Minigame.git
+$ git clone https://github.com/Charles9869/Star-Wars-Minigame.git
 ```
 
 ## SCREENSHOTS
