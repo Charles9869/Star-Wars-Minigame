@@ -3,7 +3,7 @@ const mainLogo = document.getElementById('logo');
 
 const gameEngine = new Engine(document.getElementById('app'));
 const keydownHandler = (event) => {
-  if (gameStarted === true) {
+  if (gameStarted) {
     if (event.code === 'ArrowLeft') gameEngine.player.moveLeft();
     if (event.code === 'ArrowRight') gameEngine.player.moveRight();
 
@@ -18,8 +18,10 @@ document.addEventListener('keydown', keydownHandler);
 
 // Support touchscreen on movile devices
 document.addEventListener('touchstart', (e) => {
-  if (e.touches[0].pageX < GAME_WIDTH / 2) gameEngine.player.moveLeft();
-  else gameEngine.player.moveRight();
+  if (gameStarted) {
+    if (e.touches[0].pageX < GAME_WIDTH / 2) gameEngine.player.moveLeft();
+    else gameEngine.player.moveRight();
+  }
 });
 
 const startGame = () => {
